@@ -15,15 +15,7 @@ weatherForm.addEventListener('submit',(e)=>{
             }
             else{
                 messageOne.textContent = data.location
-                console.log(data.forecastData)
-                messageTwo.textContent = data.forecastData.description
-                messageTwo.textContent += ' It is currently '
-                messageTwo.textContent += data.forecastData.temperature
-                messageTwo.textContent += ' degrees out. It feels like '
-                messageTwo.textContent += data.forecastData.feelslike
-                messageTwo.textContent += ' and the humidity is '
-                messageTwo.textContent += data.forecastData.humidity
-
+                messageTwo.textContent = data.forecastData
             }
         })
     })
