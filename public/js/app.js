@@ -21,6 +21,9 @@ weatherForm.addEventListener('submit',(e)=>{
                 messageTwo.textContent += data.forecastData.temperature
                 messageTwo.textContent += ' degrees out. and it feels like '
                 messageTwo.textContent += data.forecastData.feelslike
+                messageTwo.textContent += ' and the humidity is '
+                messageTwo.textContent += data.forecastData.humidity
+
             }
         })
     })
